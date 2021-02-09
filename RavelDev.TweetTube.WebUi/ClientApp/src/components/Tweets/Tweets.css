@@ -1,0 +1,124 @@
+﻿.mediumThumbnail {
+    width: 400px;
+    height: 400px;
+}
+
+#twitterAuthButton {
+    white-space: normal !important;
+}
+
+.d-lesser-flex{
+    display:flex;
+}
+.profileImage{
+    height: 50px;
+    width: 50px;
+}
+.youtubeContainer{
+    display: none !important;
+}
+.userPaginationNavBar {
+    height: 60px;
+}
+
+
+.ml-41{
+    margin-left:41px;
+}
+
+.tweet-thumbnail-overlay {
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mt-250{
+    margin-top:250px;
+}
+
+.tweetViewOptionsNav{
+    height:70px !important;
+}
+
+.user-tweet-nav-item{
+    margin-left: 15px !important;
+    display: initial;
+}
+
+.user-tweet-nav-item {
+    margin-left: 5px !important;
+    display: initial;
+}
+
+.tweet-nav-item {
+    margin-left: 5px !important;
+    display: initial;
+}
+
+.youtubeModalIframe {
+    min-height: 600px;
+    width: 100%;
+}
+.tweetYoutubeThumbnail {
+    height: 100%;
+    width: 100%;
+    display: initial;
+}
+.tweet-user-nav-mobile{
+    display: none;
+}
+.tweet-user-nav-total-dt{
+    display: initial;
+}
+
+
+@media (max-width : 960px) {
+    .tweetYoutubeThumbnail {
+        display: initial;
+    }
+
+    .youTubeTweetIframe {
+        display: none;
+    }
+    .youtubeOverlayIcon {
+        display: block !important;
+    }
+}
+    
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .user-tweet-selected-container{
+        text-align:center;
+    }
+    .user-selected-text {
+        display: block !important;
+    }
+    .tweet-user-nav-total-dt {
+        display: none;
+    }
+
+    .tweet-user-nav-mobile {
+        display: initial;
+    }
+
+    .tweet-nav-item {
+        display: block !important;
+    }
+
+    .img-fluid {
+        max-height: 500px;
+    }
+
+    .tweetYoutubeThumbnail {
+        display: initial;
+    }
+
+    .youTubeTweetIframe {
+        display: none;
+    }
+
+    .tweet-user-nav {
+        display: block;
+    }
+
+    .user-nav-thumbnail {
+        text-align: center;
+    }
+}

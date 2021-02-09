@@ -1,0 +1,40 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+.cursor-pointer{
+    cursor: pointer !important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.zIndexUltimate {
+    z-index: 1000000;
+}
+.bgColorWhite{
+    background-color:white !important;
+}
+.pt-50{
+    padding-top:70px;
+}
+
+.h-5{
+    height: 5% !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.mt-n20{
+    margin-top:-20px;
+}
+
+

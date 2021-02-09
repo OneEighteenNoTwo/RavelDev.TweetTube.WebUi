@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.TweetTube.WebUi", "RavelDev.TweetTube.WebUi\RavelDev.TweetTube.WebUi.csproj", "{5E645F75-39EA-42B1-B178-04B23DD92760}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.Twitter.Core", "..\RavelDev.Twitter.Core\RavelDev.Twitter.Core.csproj", "{9DA0D65D-8D7B-4E09-BB13-939BC0C82498}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.Core", "..\RavelDev.Core\RavelDev.Core.csproj", "{5844C85F-7EDE-43B6-AD09-D5E56C2C1001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavelDev.TweetTube.SignalR", "..\RavelDev.TweetTube.SignalR\RavelDev.TweetTube.SignalR.csproj", "{8F28EF20-D273-4422-9214-926A6D1A3B41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E645F75-39EA-42B1-B178-04B23DD92760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E645F75-39EA-42B1-B178-04B23DD92760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E645F75-39EA-42B1-B178-04B23DD92760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E645F75-39EA-42B1-B178-04B23DD92760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA0D65D-8D7B-4E09-BB13-939BC0C82498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA0D65D-8D7B-4E09-BB13-939BC0C82498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA0D65D-8D7B-4E09-BB13-939BC0C82498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA0D65D-8D7B-4E09-BB13-939BC0C82498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5844C85F-7EDE-43B6-AD09-D5E56C2C1001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5844C85F-7EDE-43B6-AD09-D5E56C2C1001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5844C85F-7EDE-43B6-AD09-D5E56C2C1001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5844C85F-7EDE-43B6-AD09-D5E56C2C1001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F28EF20-D273-4422-9214-926A6D1A3B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F28EF20-D273-4422-9214-926A6D1A3B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F28EF20-D273-4422-9214-926A6D1A3B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F28EF20-D273-4422-9214-926A6D1A3B41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22495940-0A20-4CBC-A5AB-E8CF17906124}
+	EndGlobalSection
+EndGlobal
