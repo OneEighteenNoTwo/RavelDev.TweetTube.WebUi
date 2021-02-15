@@ -7,7 +7,7 @@ import environment from "../../environment/environment"
 import { GenericSpinner, LoadTweetsSpinner } from "../Ui/Spinners"
 import { HubConnectionBuilder } from '@microsoft/signalr';
 import Modal from 'react-bootstrap/Modal'
-import { ArrowDown, ArrowUp, Images, People, X, Youtube } from 'react-bootstrap-icons';
+import { ArrowDown, ArrowUp, Images, People, Twitter, X, Youtube } from 'react-bootstrap-icons';
 import TwitterConstants from './Constants';
 import SignalRConstants from '../SignalR/Constants';
 export class TweetMain extends Component {
@@ -415,9 +415,13 @@ export class TweetMain extends Component {
                     <Modal.Footer>
                         {this.state.currentModalTweet &&
                         <div className="text-center w-100">
-                            <span className="d-block" dangerouslySetInnerHTML={{ __html: this.state.currentModalTweet.tweetText }}></span>
+                            <p className="d-block">
+                                <a className="mr-2" rel="noopener noreferrer" target="_blank" href={`https://twitter.com/${this.state.currentModalTweet.tweetAuthor}/status/${this.state.currentModalTweet.tweetId}`}><Twitter size={55} color={'#1DA1F2'} /></a>
+                                <span dangerouslySetInnerHTML={{ __html: this.state.currentModalTweet.tweetText }}></span>
+                            </p>
                             <img className="ml-2 img-fluid modal-img-fluid" src={this.state.currentModalTweet.tweetAuthorProfileImage} alt="something from twitter"  />
                             <span className="ml-2">{this.state.currentModalTweet.tweetAuthor}</span>
+                            
                         </div>
                         }
                         </Modal.Footer>
