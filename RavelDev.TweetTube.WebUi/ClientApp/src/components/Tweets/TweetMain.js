@@ -277,12 +277,14 @@ export class TweetMain extends Component {
         }
         const usersToDisplay = this.state.screenNameToUserData.slice(0, this.state.usersPerPage)
         this.displayYoutubePlayer(false);
+        const hasMoreUsers = this.state.usersPerPage < this.state.screenNameToUserData.length;
         this.setState({
             currentlyDisplayedTweets: [],
             viewByUser: toggleValue,
             currentUsersDisplayed: usersToDisplay,
             currentUserPage: 1,
             currentTweetDisplay: TwitterConstants.USERS_SELECTED,
+            hasMoreUsers: hasMoreUsers,
             showingTweetsFromUser: false
         })
     }
@@ -301,7 +303,8 @@ export class TweetMain extends Component {
         const startingIndex = (currentPage * this.state.usersPerPage);
         const endingIndex = (this.state.usersPerPage * navigiationToPage);
         const usersToDisplay = this.state.screenNameToUserData.slice(startingIndex, endingIndex);
-        this.setState({ viewByUser: true, currentUsersDisplayed: usersToDisplay, currentUserPage: navigiationToPage })
+        const hasMoreUsers = endingIndex < this.state.screenNameToUserData.length;
+        this.setState({ viewByUser: true, currentUsersDisplayed: usersToDisplay, currentUserPage: navigiationToPage, hasMoreUsers: hasMoreUsers })
     }
     render() {
         return (
@@ -366,7 +369,7 @@ export class TweetMain extends Component {
                     <div class="d-flex justify-content-between bd-highlight mb-3" onClick={this.userListNextPageClick}>
                                 <div class="p-2 bd-highlight"></div>
                         <div class="p-2 bd-highlight">
-                            {(!this.state.showingTweetsFromUser) && <ArrowDown size={46} />} 
+                            {(!this.state.showingTweetsFromUser && this.state.hasMoreUsers) && <ArrowDown size={46} />} 
                         </div>
                                 <div class="p-2 bd-highlight"></div>
                         </div>

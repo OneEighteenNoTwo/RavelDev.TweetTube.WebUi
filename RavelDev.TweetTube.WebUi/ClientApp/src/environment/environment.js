@@ -1,9 +1,8 @@
 ﻿const localHostBase = "https://localhost:44301";
 const productionBase = "https://tweets.postmeta.org"
-const isProduction = false;
+const isProduction = true;
 
 const urls = {
-
     getTweets: "/api/tweet",
     signalRHub: "/hubs/tweetupdates"
 }
